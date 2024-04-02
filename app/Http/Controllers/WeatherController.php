@@ -21,7 +21,7 @@ class WeatherController extends Controller
         $response = $client->get('http://api.openweathermap.org/data/2.5/weather', [
             'query' => [
                 'q' => $city,
-                'appid' => '413e2aa1280bef2efd1f52ad78dc93a6',
+                'appid' => '',
                 'units' => 'metric',
             ]
         ]);
@@ -54,7 +54,7 @@ public function getWeather1()
         $response = $client->get('http://api.openweathermap.org/data/2.5/weather', [
             'query' => [
                 'q' => $city,
-                'appid' => '413e2aa1280bef2efd1f52ad78dc93a6',
+                'appid' => '',
                 'units' => 'metric',
             ]
         ]);
