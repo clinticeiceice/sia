@@ -6,6 +6,7 @@ use App\Http\Middleware\CheckStatus;
 use App\Http\Controllers\SwitchRoleController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\WeatherController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,5 @@ Route::get('/home', [HomeController::class, 'index'])
     Route::get('/show', [\App\Http\Controllers\WeatherController::class, 'showJsonData'])->name('show');
     Route::get('/show1', [\App\Http\Controllers\WeatherController::class, 'showJsonData1'])->name('show1');
    
+    Route::get('/send-email', [EmailController::class, 'showEmailForm']);
+    Route::post('/send-email', [EmailController::class, 'sendEmail']);

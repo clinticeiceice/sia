@@ -69,6 +69,7 @@
                     @else
                         <p>You do not have permission to view the user table!</p>
                     @endif
+                    <a href="/send-email">Send Email</a>
                 <div>
                     {{-- <h6>Show weather details for:</h6>
 
