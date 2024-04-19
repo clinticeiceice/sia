@@ -7,6 +7,7 @@ use App\Http\Controllers\SwitchRoleController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\WeatherController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\OTPController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,6 @@ Route::get('/home', [HomeController::class, 'index'])
    
     Route::get('/send-email', [EmailController::class, 'showEmailForm']);
     Route::post('/send-email', [EmailController::class, 'sendEmail']);
+    Route::post('/generate-otp', [OTPController::class, 'generateOTP']);
+    Route::post('/verify-otp', [OTPController::class, 'verifyOTP']);
+    

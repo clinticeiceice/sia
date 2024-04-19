@@ -15,7 +15,7 @@ class EmailController extends Controller
 
     public function sendEmail(Request $request)
     {
-        $toEmail = 'reneegortifacion@gmail.com';
+        $toEmail = 'gornedanica@gmail.com';
         $subject = 'Test Email';
         $content = 'Test Email from Laravel, for SIA 2 subject by Sir Clint';
 
